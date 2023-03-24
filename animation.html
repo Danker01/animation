@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation</title>
+
+	<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}		
+	body{
+		background-image: url(background.jpg);
+		background-size: cover;
+		height: 600px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.logo_H2O{
+			position: absolute;
+			bottom: 49.75%;
+    		left: 47.5%;
+			width: 130px;
+			height: 130px;
+			border: 3px solid black;
+		}
+	.logo_H2O p{
+		position: absolute;
+		top:0;
+		left:0;
+		color: white;
+		font-size: 50pt;
+	}
+	.dribble{
+		position:absolute;
+		width: 132px;
+		height: 132px;
+		background-color: #3B9BE5;
+		animation: dribble_animate 5s ease-out;
+		animation-iteration-count: infinite;
+	}
+
+	.face{
+		width: 130px;
+		height: 130px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		transform: rotate(225deg);
+		
+	}
+	.about_watter{
+		position: absolute;
+		top:0;
+		right: 0;
+		width: 650px;
+		font-size: 30px;
+		color: white;
+		padding: 50px;
+		
+	}
+	.eyes div{
+		width: 4px;
+		height: 4px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 25px;
+		background-color: black;
+		border-radius: 50%;
+	}
+	.eyes{
+		display: flex;
+			
+	}
+	.mouth{
+		width: 15px;
+		height: 15px;
+		
+		border-bottom: 2px solid black;
+		border-radius: 50%;
+		
+	}
+	@keyframes dribble_animate{
+		0%{
+			bottom: 50%;
+			border-radius: 0;
+			transform: translate(0, 0) scale(1) rotate(0deg);
+		}
+		5%{
+			bottom: 25%;
+		}
+		10%{
+			border-radius: 50% 0 0 0;
+			transform: rotate(45deg);
+		}
+		15%{
+			border-radius: 50% 50% 0 0;	
+			transform: rotate(90deg);
+		}
+		20%{
+			border-radius: 50% 50% 50% 0;	
+			transform: rotate(135deg);bottom: 25%;
+		}
+		22%{
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg);
+			bottom: 25%;
+		}
+		24%{ 
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg) translateX(10px);
+			bottom: 25%;
+		}
+		26%{
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg) translateX(-20px);
+			bottom: 25%;
+		}
+		28%{
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg) translateX(20px);
+			bottom: 25%;
+		}
+		30%{
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg) translateX(-20px);
+			bottom: 25%;
+		}
+		32%{
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg) translateX(20px);
+			bottom: 25%;
+		}
+		33%{
+			border-radius: 50% 50% 50% 0;
+			transform: scale(2, 0.5) rotate(135deg) translateX(-10px);
+			bottom: 25%;
+		}
+		60%{
+			border-radius: 50% 50% 50% 0;
+			bottom: 80%;
+			transform: scale(1, 2) rotate(135deg);
+		}
+		65%{
+			border-radius: 50% 50% 50% 0;
+			bottom: 65%;
+			transform: scale(1, 2) rotate(315deg);
+		}
+		75%{
+			border-radius: 50% 50% 50% 0;
+			bottom: 45%;
+			transform: scale(2, 0.5) rotate(315deg);
+		}
+		80%{
+			background-color: skyblue;
+			border-radius: 50%;
+			bottom: 45%;
+			transform: scale(1, 1) rotate(90deg);
+		}
+		85% 95%{
+			bottom: 50%;
+			border-radius: 50% 50% 50% 0;
+			transform: scale(1, 1) rotate(135deg);
+			color: blue;
+		}
+		100%{
+			bottom: 50%;
+			transform: scale(1, 1) rotate(0deg);
+			border-radius: 0;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div>
+	</div>
+	<div class="dribble">		
+		<div class="face">
+			<div class="eyes">
+				<div></div>
+				<div></div>
+			</div>
+			<div class="mouth"></div>
+		</div>
+	</div>
+	<div class="logo_H2O">
+		<p>H2O</p>
+	</div>
+	<blockquote class="about_watter">Ти наливаєш воду в чашку – вона стає чашкою, <br>
+							ти наливаєш воду в пляшку – вона стає пляшкою, <br>
+							ти наливаєш воду у чайник – вона стає чайником. <br>
+							Вода може текти, а може трощити. Будь водою, мій друже!"<br>
+							<cite> Брюс Лі</cite></blockquote>
+</body>
+</html>
